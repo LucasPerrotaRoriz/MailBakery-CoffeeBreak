@@ -16,8 +16,8 @@
 	<meta name="format-detection" content="address=no" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="x-apple-disable-message-reformatting" />
-    <!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+   <!--[if !mso]><!-->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet" />
     <!--<![endif]-->
 	<title>Email Template</title>
 	<!--[if gte mso 9]>
@@ -129,103 +129,59 @@
 		/* Mobile styles */
 		@media only screen and (max-device-width:480px), only screen and (max-width:480px) {
 			.mobile-shell { width: 100% !important; min-width: 100% !important; }
-			
+
+			.text-header,
 			.m-center { text-align: center !important; }
-			
+			.holder { padding: 0 10px !important; }
+
+			.text-nav { line-height: 28px !important; }
+
 			.center { margin: 0 auto !important; }
 
 			.td { width: 100% !important; min-width: 100% !important; }
 
+			.text-header .link-white { text-shadow: 0 3px 4px rgba(0,0,0,09) !important; }
+
 			.m-br-15 { height: 15px !important; }
+			.bg { height: auto !important; } 
+
+			.h0 { height: 0px !important; }
 
 			.m-td,
-			.m-hide { 
-				display: none !important; 
-				width: 0 !important;
-				height: 0 !important; 
-				font-size: 0 !important; 
-				line-height: 0 !important; 
-				min-height: 0 !important; 
-			}
+			.m-hide { display: none !important; width: 0 !important; height: 0 !important; font-size: 0 !important; line-height: 0 !important; min-height: 0 !important; }
 
 			.m-block { display: block !important; }
 
-			.m-auto { height: auto !important; } 
-
-			.fluid-img img { 
-				width: 100% !important; 
-				max-width: 100% !important; 
-				height: auto !important; 
-			}
-
-			.bg { 
-				-webkit-background-size: cover !important; 
-				background-size: cover !important; 
-				background-repeat: none !important; 
-				background-position: center 0 !important; 
-			}
-
-			.p20-15 { padding: 20px 15px !important; }
-
 			.p30-15 { padding: 30px 15px !important; }
-
-			.p30-15-0 { padding: 30px 15px 0px 15px !important; }
-
-			.pt-30 { padding-top: 30px !important;}
-
-			.pb-10 { padding-bottom: 10px !important; }
-
-			.pb-20 { padding-bottom: 20px !important; }
-
-			.pb-30 { padding-bottom: 30px !important; }
-
-			.pb-40 { padding-bottom: 40px !important; }
-
+			.p15-15 { padding: 15px 15px !important; }
 			.p30-0 { padding: 30px 0px !important; }
-			
-			.nopt { padding-top: 0px !important; }
+			.p0-0-30 { padding: 0px 0px 30px 0px !important; }
+			.p0-15-30 { padding: 0px 15px 30px 15px !important; }
+			.p0-15 { padding: 0px 15px 0px 15px !important; }
+			.mp0 { padding: 0px !important; }
+			.mp20-0-0 { padding: 20px 0px 0px 0px !important }
+			.mp30 { padding-bottom: 30px !important; }
+			.container { padding: 20px 0px !important; }
+			.outer { padding: 0px !important }
 
-			.nobb { border-bottom: none !important; }
-
-			.nop { padding: 0 !important; }
-
-			.content { padding: 30px 15px !important; }
-
-			.bt30 { border-top: 30px solid #ffffff !important; }
-
-			.pb0 { padding-bottom: 0px !important; }
-
-			.box { padding: 30px 15px !important; }
-
-			.pb60 { padding-bottom: 30px !important; }
-
-			.h1 { font-size: 44px !important; line-height: 48px !important; }
-
-			.h2 { font-size: 22px !important; line-height: 26px !important; }
-
-			.title { font-size: 24px !important; line-height: 28px !important; }
-
-			.m-list { font-size: 18px !important; line-height: 22px !important; }
-
-			.text-footer { text-align: center !important; }
+			.fluid-img img { width: 100% !important; max-width: 100% !important; height: auto !important; }
 
 			.column,
 			.column-top,
 			.column-dir,
 			.column-empty,
 			.column-empty2,
+			.column-empty3,
 			.column-bottom,
 			.column-dir-top,
-			.column-dir-bottom { 
-				float: left !important;
-				width: 100% !important; 
-				display: block !important; }
+			.column-dir-bottom { float: left !important; width: 100% !important; display: block !important; }
 
 			.column-empty { padding-bottom: 10px !important; }
-
-			.column-empty2 { padding-bottom: 30px !important; }
+			.column-empty2 { padding-bottom: 25px !important; }
+			.column-empty3 { padding-bottom: 45px !important; }
 
 			.content-spacing { width: 15px !important; }
+			.content-spacing2 { width: 25px !important; }
 		}
 
 		 /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
@@ -250,7 +206,123 @@
 </head>
 <body class="body" style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#1d1d1d; -webkit-text-size-adjust:none;">
 	<!-- Email Body: BEGIN -->
-	
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#4b3832">
+		<tr>
+			<td align="center" valign="top" style="padding: 40px 0;" class="outer">
+				<table cellpadding="0" cellspacing="0" border="0" width="650" class="mobile-shell">
+					<tr>
+						<td class="td" style="width: 100%; min-width: 100%; font-size: 0pt; line-height: 0pt; margin: 0; padding: 0; Margin: 0">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td>
+										<!-- Header : BEGIN -->
+										<table cellpadding="0" cellspacing="0" border="0" width="100%">
+											<tr>
+												<td>
+													<table cellpadding="0" cellspacing="0" border="0" width="100%">
+														<tr>
+															<th class="column" width="208" bgcolor="#ffffff" style="font-size: 0pt; line-height: 0pt; margin: 0; padding: 0;">
+																<table cellpadding="0" cellspacing="0" border="0" width="100%">
+																	<tr>
+																		<td class="img m-center" style="font-size: 0pt; line-height: 0pt; text-align: left;">
+																			<img class="fluid-img" src="https://github.com/LucasPerrotaRoriz/MailBakery-CoffeeBreak/blob/main/images/t11_free_logo.jpg?raw=true"
+																			width="208" height="80" border="0" alt="">
+																		</td>
+																	</tr>
+																</table>
+															</th>
+			
+															<th class="column-empty" bgcolor="#f7f0e7" width="1" style="font-size: 0pt; font-weight: normal; line-height: 0pt; margin: 0; padding: 0;"></th>
+			
+															<th class="column" bgcolor="#f7f0e7" style="font-size: 0pt; line-height: 0pt; margin: 0; padding: 0;">
+																<table cellpadding="0" cellspacing="0" border="0" width="100%">
+																	<tr>
+																		<td class="text-header" style="font-family: Arial, sans-serif; font-size: 12px; line-height: 16px; text-align: right; padding: 15px 20px 15px 40px; color: #999999;">
+																			No images?
+																			<span style="text-decoration: underline; color: #999999;">
+																				<a href="#" target="_blank" style="text-decoration: underline; color: #999999;">
+																					<span>
+																						Open in your browser
+																					</span>
+																				</a>
+																			</span>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- Header : END -->
+
+										<!-- Navigation : BEGIN -->
+										<table cellpadding="0" cellspacing="0" border="0" width="100%">
+											<tr>
+												<th class="column" bgcolor="#854442" style="font-size: 0pt; font-weight: normal; line-height: 0pt; margin: 0; padding: 0;"> 
+													<table cellpadding="0" cellspacing="0" border="0" width="100%">
+														<tr>
+															<td class="text-nav" style="font-family: 'Playfair Display', Arial, sans-serif; font-size: 14px; line-height: 18px; text-align: center; text-transform: uppercase; padding: 12px 20px; color: #ffffff;">
+																<span>
+																	<a href="#" target="_blank" style="text-decoration: none; color: #ffffff;">
+																		<span class="link-white" style="color:#ffffff; text-decoration:none;">Coffee</span>
+																	</a>
+																	&nbsp; &nbsp; &nbsp;
+																</span>
+																<span>
+																	<a href="#" target="_blank" style="text-decoration: none; color: #ffffff;">
+																		<span class="link-white" style="color:#ffffff; text-decoration:none;">Beverages</span>
+																	</a>
+																	&nbsp; &nbsp; &nbsp;
+																</span>
+																<span>
+																	<a href="#" target="_blank" style="text-decoration: none; color: #ffffff;">
+																		<span class="link-white" style="color:#ffffff; text-decoration:none;">Breakfast</span>
+																	</a>
+																	&nbsp; &nbsp; &nbsp;
+																</span>
+																<span>
+																	<a href="#" target="_blank" style="text-decoration: none; color: #ffffff;">
+																		<span class="link-white" style="color:#ffffff; text-decoration:none;">Lunch</span>
+																	</a>
+																	&nbsp; &nbsp; &nbsp;
+																</span>
+																<span>
+																	<a href="#" target="_blank" style="text-decoration: none; color: #ffffff;">
+																		<span class="link-white" style="color:#ffffff; text-decoration:none;">Desserts</span>
+																	</a>
+																
+																</span>
+															</td>
+														</tr>
+													</table>
+												</th>
+												<th class="column" width="145" bgcolor="#E27651" style="font-size: 0pt; font-weight: normal; line-height: 0pt; margin: 0; padding: 0;"> 
+													<table cellpadding="0" cellspacing="0" border="0" width="100%">
+														<tr>
+															<td style="font-family: 'Playfair Display', Arial, sans-serif; font-size: 14px; line-height: 18px; text-align: center; text-transform: uppercase; padding: 12px 20px; color: #ffffff;">
+																<span style="text-decoration: none; color: #ffffff;">
+																	<a href="#" target="_blank" style="text-decoration: none; color: #ffffff;">
+																		<span>Happy Hour</span>
+																	</a>
+																</span>
+															</td>
+														</tr>
+													</table>
+												</th>
+											</tr>
+										</table>
+										<!-- Navigation : END -->
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 	<!-- Email Body : END -->
 </body>
 </html>
